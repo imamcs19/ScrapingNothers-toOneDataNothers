@@ -5,7 +5,6 @@ volumes:
     driver: local
   rs1:
   rs2:
-  rs3:
 
 services:
 #   zookeeper:
