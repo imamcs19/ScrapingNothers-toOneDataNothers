@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<!-- <html class="gr__ubtechedu_com" lang="en"><head> -->
+<html class="ub_ac_id" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<title>Menu Login</title>
+	<meta name="keywords" content="Contact Us">
+	<meta name="description" content="Contact Us">
+	<meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	
+
+
+
+
+<link rel="stylesheet" type="text/css" href="page/beginning.css">
+<link rel="stylesheet" href="page/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="page/public.css">
+<script type="text/javascript" async="" src="page/analytics.js">
+<!-- </script><script src="page/hm.js"> -->
+</script><script src="page/jquery.js"></script>
+<script src="page/public.js"></script>
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<!-- <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script> -->
+<script src="page/login.js"></script>
+
+
+
+
+
+
+
+
+<!-- <script type="text/javascript" src="/global/APP/Public/Home/js/cookie.js"></script> -->
+
+<link rel="Shortcut Icon" href="../home/icon.png">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="page/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-154585141-2');
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  //var hm = document.createElement("script");
+  //hm.src = "https://hm.baidu.com/hm.js?9a3a7477fd56bada47d6d51886812128";
+  //var s = document.getElementsByTagName("script")[0]; 
+  //s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+    <link rel="stylesheet" type="text/css" href="page/gather.css">
+    <link rel="stylesheet" type="text/css" href="page/animate.css">
+</head>
+<body data-gr-c-s-loaded="true">
+	<!--header-->
+	<div class="Header-wrapper">
+        <div class="Header-container clearFix">
+            <div class="Header-logo clearFix">
+                <a href=""><img src="page/5d5ca227dfd29.png" alt=""></a>
+            </div>
+            <div class="Header-navclick clearFix ontrue"><span></span></div>
+            <div class="header-lang"><a target="_blank" href="https://ub.ac.id/">DS</a></div>
+            <div class="Header-navbarbox" style="display: block;">
+                <div class="Header-navbar">
+                    <ul>
+                        <!-- 选中li 添加 class="ontrue" -->
+						<li>
+                            <a class="Header-Menu" href="../">Beranda</a>
+                        </li>
+                        <li>
+                            <a class="Header-Menu" href="">Materi Pelatihan</a>
+                            <i class="Header-sunNavClick"></i>
+                            <div class="Header-sunNav" style="overflow: hidden; height: 150px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px; display: none;">
+                                <div class="Header-sunNavl2 clearFix">
+                                    <div class="Header-sunNavl-click">
+                                        <ul>
+                                            <li>
+                                                <h4><a href="javascript:;">Regresi </a></h4>
+                                                <p><a href="../reg/">Linear</a></p>
+                                                <p><a href="">Non-Linear</a></p> 
+                                            </li>
+                                            <li>
+                                                <h4><a href="javascript:;">Klasifikasi</a></h4>
+                                                														<p><a href="">2 Kelas (Binary Classification)</a></p><p><a href="">&gt; 2 Kelas (Multi-Class)</a></p>
+													                                            </li>
+                                            <li>
+                                                <h4><a href="javascript:;">Clustering</a></h4>
+                                                <p><a href="">Hard Clustering</a></p>
+                                                        
+                                                        <p><a href="">Hierarchical Clustering</a></p>                                            </li>
+                                            <li>
+                                                <h4><a href="javascript:;">Analisis Hasil</a></h4>
+                                                <p><a href="">Pola Data</a></p>
+                                                <p><a href="" target="_blank">Kecenderungan Hasil</a></p>
+                                            </li>
+                                        </ul>  
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li style="position: relative">
+                            <a class="Header-Menu" href="">Tentang Kami</a>
+                            <i class="Header-sunNavClick"></i>
+                            <div class="Header-sunNav" style="overflow: hidden; height: 82px; padding-top: 5px; margin-top: 0px; padding-bottom: 5px; margin-bottom: 0px; display: none;">
+                                <div class="Header-sunNavl clearFix">
+                                    <p><a href="https://ub.ac.id/">UB</a></p>
+                                    <p><a href="https://filkom.ub.ac.id/" target="_blank">Filkom UB</a></p>
+                               </div>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>   
+        
+   
+    <!-- Container -->
+    <div class="Container-wrapper">
+        <!-- banner -->
+        
+        <div>
+            <div class="center clearFix">
+                
+                <div class="con-message">
+                    <div class="message-title">
+                        <h6>Masukkan User &amp; Password</h6>
+                        <p>
+                            Pastikan User dan Password Anda benar!
+                        </p>
+                    </div>
+                    <form class="message-list" id="yourformid">
+                        <div class="message-list1">
+                            <input type="email" name="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="message-list2">
+                            <input type="password" name="pwd" id="password" placeholder="Password">
+                        </div>
+                        
+                        
+
+
+
+                        <div class="message-list4">
+						    <div class="Footer-searwords">
+                            <div  class="Footer-searsubmit"  onclick="signin()" id="signin">Sign In</div> 
+							</div>
+                        </div>
+						<div class="message-list4">
+						    <div class="Footer-searwords">
+                             <div  class="Footer-searsubmit"  onclick="signup()"  id="signup">Sign Up</div>
+							</div>
+                        </div>
+						 <div class="message-list4">
+						    <div class="Footer-searwords">
+                            <div  class="Footer-searsubmit"   onclick="signout()"  id="signout">Sign Out</div>
+							</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>          
+    </div>
+
+	<!--<form id="yourformid">
+		<div class="container">
+			<div class="row submit-content">
+				<h4>Feedback<hr class="contact-hr"></h4>
+				<p class="contact-tip">If you have any questions that require our assistance, please fill in the following contact information so that we can contact you!</p>
+				<div class="col-lg-6 col-md-6">
+					<span>Name：</span> <input type="text" name="contact" id="contact" class="form-control"  placeholder="">
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tel：</span><input type="text" name="tel"  id="tel" class="form-control"  placeholder="">
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<span>Email：</span><input type="text" name="email" id="email" class="form-control"  placeholder="">
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<span>Address：</span> <input type="text" name="addr" id="addr" class="form-control" placeholder="">
+				</div>
+				<div class="col-lg-12 col-md-12">
+					<p class="textarea-tip">Please enter your message in the following fields</p>
+					<textarea class="form-control form-textarea" name="content"  id="content"   rows="8"></textarea>
+				</div>
+				<button class="btn" id="tjtj">Submit</button>
+			</div>
+		</div>
+	</form>-->
+
+	<!-- Footer -->
+    
+    <div class="Footer-wrapper">
+        <div class="Footer-container clearFix">
+            <!-- <div class="Footer-search" style="visibility: hidden;"> -->
+            <div class="Footer-search">
+                <div class="Footer-searwords">
+                    <input type="text" name="ft_email" id="ft_email" placeholder="Masukkan Email Anda">
+                    <div class="Footer-searsubmit" id="ft_btn">Join/Sign Up</div>
+                </div>
+            </div>
+            <div class="Footer-navbar clearFix">
+                <ul>
+                    <li>
+                        <div class="Footer-navclick">
+                            <h6>Regresi</h6><i class="Footer-navarr"></i>
+                        </div>
+                        <div class="Footer-navwords">
+							<a href="">Linear</a>
+                            <a href="">Non-Linear</a>         
+						</div>
+                    </li>
+                    <li>
+                        <div class="Footer-navclick">
+                            <h6>Klasifikasi</h6><i class="Footer-navarr"></i>
+                        </div>
+                        <div class="Footer-navwords">
+                            <a href="">2 Kelas (Binary Classification)</a>
+							<a href="">> 2 Kelas (Multi-Class)</a>							
+						</div>
+                    </li>
+                    <li>
+                        <div class="Footer-navclick">
+                            <h6>Clustering</h6><i class="Footer-navarr"></i>
+                        </div>
+                        <div class="Footer-navwords">
+                            <a href="">Hard Clustering</a>
+                            <a href="" target="_blank">Hierarchical Clustering </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="Footer-navclick">
+                            <h6>Analisis Hasil</h6><i class="Footer-navarr"></i>
+                        </div>
+                        <div class="Footer-navwords">
+                            <a href="" target="_blank">Pola Data</a>
+                            <a href="">Kecenderungan Hasil</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="Footer-navclick">
+                            <h6>Tentang Kami</h6><i class="Footer-navarr"></i>
+                        </div>
+                        <div class="Footer-navwords">
+                            <a href="">Contact Us</a>
+                            <a href="" target="_blank">Terms of use</a>
+                            <a href="" target="_blank">Privacy Agreement</a>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="Footer-bottom">
+                <p>Copyright © 2020 edUBig | Pelatihan Data Science&nbsp;<a href="ub.ac.id" target="_blank"></a>&nbsp; </p>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+
+        $('#ft_btn').click(function(){
+            var ft_email=$('#ft_email').val();
+            if(ft_email==""){
+                alert("Please fill in YOUR EMAIL ADDRESS!");return false;
+            }
+            $.ajax({
+                url: "/global/index.php/list/mag2.html",
+                type: "POST",
+                data: {'email':ft_email},
+                async: true,
+                dataType: "json",
+                success: function(data){
+                    if (data == "1") {
+                        alert("Successful!"); location.reload();
+                    }
+                }
+            });
+        });
+</script>
+
+
+	
+	<script type="text/javascript" src="page/wow.js"></script>
+
+	<script>
+		$('#tjtj').click(function(){
+			/*var	very=$('#very').val();
+			if(very==""){
+				alert("Please fill in the verification code!");return false;
+			}*/
+			var	email=$('#email').val();
+			var	pwd=$('#pwd').val();
+
+			if(email=="" || pwd==''){alert('Masukkan email dan password Anda!');return false;}
+			//if(pwd==''){alert('Masukkan password Anda!');return false;}
+			if(isNaN(email)|| isNaN(pwd)){alert('Please fill in the correct contact information!');return false;}
+			var myreg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+			if(!myreg.test(email))
+			{alert('Masukkan email Anda dengan benar!'); return false; }
+
+
+			$.ajax({
+				//url: "/global/index.php/list/mag.html",
+				url: "",
+				type: "POST",
+				//data: {'email':email,'click_name':click_name,'content':content},
+				 data:$('#yourformid').serialize(),// 提交整个表单 你的formid
+				async: true,
+				dataType: "json",
+				success: function(data){
+
+					if (data == "1") {
+						alert("Successful!"); location.reload();
+					}
+				}
+			});
+		});
+        $(function () {
+            
+        });
+        wow = new WOW({
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 240,
+            mobile: false,
+            live: true
+        });
+        wow.init();
+	</script>
+
+
+
+</body></html>

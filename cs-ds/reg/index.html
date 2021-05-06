@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<!-- <html class="gr__ubtechedu_com" lang="en"><head> -->
+<html class="ub_ac_id" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<title>Intro | Data Science</title>
+	<meta name="keywords" content="Contact Us">
+	<meta name="description" content="Contact Us">
+	<meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	
+
+
+
+
+<link rel="stylesheet" type="text/css" href="res/beginning.css">
+<link rel="stylesheet" href="res/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="res/public.css">
+<script type="text/javascript" async="" src="res/analytics.js"></script>
+<!-- <script src="res/hm.js"></script> -->
+<script src="res/jquery.js"></script>
+<script src="res/public.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0"> </script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script> 
+<!-- <script src="res/Chart.bundle.min.js"></script>  -->
+
+
+
+
+
+
+<!-- <script type="text/javascript" src="/global/APP/Public/Home/js/cookie.js"></script> -->
+
+<link rel="Shortcut Icon" href="../home/icon.png">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="res/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-154585141-2');
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  //var hm = document.createElement("script");
+  //hm.src = "";
+  //var s = document.getElementsByTagName("script")[0]; 
+  //s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+    <link rel="stylesheet" type="text/css" href="res/gather.css">
+    <link rel="stylesheet" type="text/css" href="res/animate.css">
+</head>
+<body data-gr-c-s-loaded="true">
+	<!--header-->
+	<div class="Header-wrapper">
+        <div class="Header-container clearFix">
+            <div class="Header-logo clearFix">
+                <a href=""><img src="res/5d5ca227dfd29.png" alt=""></a>
+            </div>
+            <div class="Header-navclick clearFix ontrue"><span></span></div>
+            <div class="header-lang"><a target="_blank" href="https://ub.ac.id/">DS</a></div>
+            <div class="Header-navbarbox" style="display: block;">
+                <div class="Header-navbar">
+                    <ul>
+                        <!-- 选中li 添加 class="ontrue" -->
+						<li>
+                            <a class="Header-Menu" href="../">Beranda</a>
+                        </li>
+                        <li>
+                            <a class="Header-Menu" href="">Materi Pelatihan</a>
+                            <i class="Header-sunNavClick"></i>
+                            <div class="Header-sunNav" style="overflow: hidden; height: 150px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px; display: none;">
+                                <div class="Header-sunNavl2 clearFix">
+                                    <div class="Header-sunNavl-click">
+                                        <ul>
+                                            <li>
+                                                <h4><a href="javascript:;">Regresi </a></h4>
+                                                <p><a href="">Linear</a></p>
+                                                <p><a href="">Non-Linear</a></p> 
+                                            </li>
+                                            <li>
+                                                <h4><a href="javascript:;">Klasifikasi</a></h4>
+                                                														<p><a href="">2 Kelas (Binary Classification)</a></p><p><a href="">&gt; 2 Kelas (Multi-Class)</a></p>
+													                                            </li>
+                                            <li>
+                                                <h4><a href="javascript:;">Clustering</a></h4>
+                                                <p><a href="">Hard Clustering</a></p>
+                                                        
+                                                        <p><a href="">Hierarchical Clustering</a></p>                                            </li>
+                                            <li>
+                                                <h4><a href="javascript:;">Analisis Hasil</a></h4>
+                                                <p><a href="">Pola Data</a></p>
+                                                <p><a href="" target="_blank">Kecenderungan Hasil</a></p>
+                                            </li>
+                                        </ul>  
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li style="position: relative">
+                            <a class="Header-Menu" href="">Tentang Kami</a>
+                            <i class="Header-sunNavClick"></i>
+                            <div class="Header-sunNav" style="overflow: hidden; height: 82px; padding-top: 5px; margin-top: 0px; padding-bottom: 5px; margin-bottom: 0px; display: none;">
+                                <div class="Header-sunNavl clearFix">
+                                    <p><a href="https://ub.ac.id/">UB</a></p>
+                                    <p><a href="https://filkom.ub.ac.id/" target="_blank">Filkom UB</a></p>
+                               </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="Header-Menu" href="../login/">Login</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>   
+        
+   
+    <!-- Container -->
+    <div class="Container-wrapper">
+        <!-- banner -->
+        
+            <div class="center clearFix">
+                
+                <div class="con-message">
+                    <div class="message-title">
+                        <h6>Operasi Dasar | Penjumlahan</h6>
+                        <p>
+                            Inputkan dua buah bilangan!
+                        </p>
+                    </div>
+					
+					
+					
+                    <form class="message-list" id="yourformid">
+                        <div class="message-list1">
+                            <input type="text" name="num1" id="num1" placeholder="Input Bil. ke-1">
+                        </div>
+                        <div class="message-list2">
+                            <input type="text" name="num2" id="num2" placeholder="Input Bil. ke-2">
+                        </div>							
+                      
+						
+						<div id='mymyDiv1234' style="display: none;">...</div>
+						<div class="Footer-wrapper2">
+						<div class="Footer-container2 clearFix">
+                        <div class="Footer-search">
+							<div class="Footer-searwords">
+								<input type="text" style="font-size:20px; color:black; background-color:white;" name="text_hasil" id="text_hasil" placeholder="__">
+								<div class="Footer-searsubmit" style="color:white; background-color:black;" id="btn_hitung" onclick="{
+									
+							  // Dgn TF	
+							  const myA = tf.scalar(document.getElementById('num1').value,'float32');
+							  const myB = tf.scalar(document.getElementById('num2').value,'float32');
+							  const myResult = tf.add(myA, myB);
+							  //document.getElementById('mymyDiv1234').innerHTML = myResult.dataSync(); 		
+								
+							  // pure JS
+							  const JS_myA = document.getElementById('num1').value;
+							  const JS_myB = document.getElementById('num2').value;
+							  const JS_myResult = Number(JS_myA) + Number(JS_myB);
+							  
+							  //alert(JS_myResult)
+							  
+							  // Cek hasil dari TF vs JS utk compatibilitas di Platform
+							  let From_TF_myArray_init = Array.from(myResult.dataSync());							  
+							  let From_TF_myArray = From_TF_myArray_init.map(a => a.toFixed(2));
+							  let From_JS_myResult = JS_myResult.toFixed(2);
+							  
+							  //alert(From_TF_myArray + '..' + From_JS_myResult)
+							  
+							  
+							  if(From_TF_myArray != From_JS_myResult){
+							    //alert(From_TF_myArray-From_JS_myResult)
+								document.getElementById('mymyDiv1234').innerHTML = From_JS_myResult;
+							  }
+							  else{
+								document.getElementById('mymyDiv1234').innerHTML = myResult.dataSync(); 
+							  }
+							  
+							}">Hitung</div>
+							</div>
+						</div>
+						</div>
+						</div>
+
+                    </form>
+                </div>
+            </div>        
+   
+        <!-- banner -->
+        
+            <div class="center clearFix">
+                
+                <div class="con-message">
+                    <div class="message-title">
+                        <h6>Latihan Koding | Penjumlahan</h6>
+                        <p>
+                            Ubah kode program berikut dan jalankan!
+                        </p>
+                    </div>
+					
+					
+					
+                    <form class="message-list" id="yourformid">
+					    
+                        <div >
+                            <textarea id="myTextarea1234" style="font-size:12px; color:white; background-color:black; width:100%;" rows="2" onclick="{
+							  if (myOnce1234){
+								 myTextGrow('myTextarea1234', 'myDiv1234Code')
+								 document.getElementById('myUpdate1234').style.visibility = 'visible'
+								 myOnce1234 = false
+							  }
+							}" wrap="off">Klik disini untuk Latihan Koding | Penjumlahan.
+							</textarea>
+							
+							
+                           
+							
+                        </div>
+		
+						
+                       
+						<div class="message-list4"  style="display: none;">
+						 <div id="myDiv1234Code"> 
+<input id="myButton1234" type="button" value="Use GPU math" style="visibility:hidden;" onclick="{
+                                                                                                                                 
+  //const myA =  tf.scalar(6.1434, 'float32')
+  const myA = tf.tensor1d([10,20,30], 'int32')
+  const myB = tf.scalar(2.1, 'float32')
+  const myResult = tf.add(myA, myB);
+  //document.getElementById('myDiv1234').innerHTML = myResult.dataSync()[0].toFixed(2)  
+  
+  let myArray = Array.from(myResult.dataSync());
+  let result2 = myArray.map(a => a.toFixed(2));
+  document.getElementById('myDiv1234').innerHTML = result2 
+                                                                 
+}"><br><br>
+
+</div>
+						
+						 </div>
+						 
+						<div id='myDiv1234' style="display: none;">...</div>							
+						<div class="Footer-search">
+							<div class="Footer-searwords">
+								<input type="text" style="font-size:20px; color:black;" name="text_hasil2" id="text_hasil2" placeholder="__">
+								<div class="Footer-searsubmit" id="myUpdate1234" style="color:black; visibility:hidden;" onclick="{
+								   // first remove first and last line since they are injected
+								  myFred = document.getElementById('myTextarea1234').value.split('\n')
+								  myFred.pop()
+								  myFred.push('')
+								  myFred.shift()
+								  myFred.shift()
+								  myJoe = myFred.join('\n')
+								  document.getElementById('myDiv1234Code').innerHTML =    myJoe 
+								  document.getElementById('myButton1234').click()
+																			 
+								}">Update & Run</div>
+							</div>
+						</div>
+
+						
+                    </form>
+                </div>
+            </div> 
+
+		<!-- Koding Utama | Regresi -->
+        
+            <div class="center clearFix">
+                
+                <div class="con-message">
+                    <div class="message-title">
+                        <h6>Koding Dasar | Visualisasi</h6>
+                    </div>
+					
+					
+					
+                    <form class="message-list" id="yourformid">
+						
+						<br>
+						<div style="width:100%;">
+						  <canvas id="myChart" width="100%" height="40"></canvas>
+						</div>
+                    </form>
+                </div>
+            </div> 		
+
+			<!-- Koding Utama | Regresi -->
+        
+            <div class="center clearFix">
+                
+                <div class="con-message">
+                    <div class="message-title">
+                        <h6>Latihan Koding Utama | Regresi</h6>
+                        <p>
+                            Ubah kode program berikut dan jalankan!
+                        </p>
+                    </div>
+					
+					
+					
+                    <form class="message-list" id="yourformid">
+					    
+                        <div >
+						
+
+							
+							<textarea id="myTextarea321" style="font-size:12px; color:white; background-color:black; width:100%;" rows="2" onclick="{
+							  if (myOnce321){
+								 myTextGrow('myTextarea321', 'myDiv321Code')
+								 document.getElementById('myUpdate321').style.visibility = 'visible'
+								 document.getElementById('321CanvasDiv').style.visibility = 'visible'
+								 myOnce321 = false
+							  }
+							}" wrap="off">Klik disini untuk Latihan Koding | Regresi.
+							</textarea>
+							
+							
+                           
+							
+                        </div>
+						
+						<br>
+						<div id="321CanvasDiv" style="width:100%; ">
+						  <canvas id="myChart2" width="100%" height="40"></canvas>
+						</div>
+		
+						
+                       
+						<div class="message-list4"  style="display: none;">
+							<div id="myDiv321Code"> 
+<input type="button" id="myButton321" style="display: none;" value="Run All" onclick="{
+
+const trainX = [
+    1.0,
+    4.4,
+    3.1
+  ];
+  const trainY = [
+    1.0,
+    2.76,
+    1.3
+  ];
+
+  const m = tf.variable(tf.scalar(Math.random()));
+  const b = tf.variable(tf.scalar(Math.random()));
+  
+  function predict(x) {
+    return tf.tidy(function() {
+      return m.mul(x).add(b);
+    });
+  }
+  
+  function loss(prediction, labels) {
+  //subtracts the two arrays & squares each element of the tensor then finds the mean. 
+  const error = prediction.sub(labels).square().mean();
+  return error;
+  }
+  
+  // diberikan async, karena fungsi ini pertama kali dijalankan
+  async function train() {
+
+    const learningRate = 0.01;
+    const optimizer = tf.train.sgd(learningRate);
+
+      optimizer.minimize(function()  {
+        const predsYs = predict(tf.tensor1d(trainX));
+        console.log(predsYs);
+        stepLoss = loss(predsYs, tf.tensor1d(trainY))
+        console.log(stepLoss.dataSync()[0])
+        return stepLoss;
+      });
+      plot();
+  }
+  const predictionsBefore = predict(tf.tensor1d(trainX));
+  
+  function plot() {
+    let plotData = [];
+
+    for (let i = 0; i < trainY.length; i++) {
+      plotData.push({ x: trainX[i], y: trainY[i] });
+    }
+
+    var ctx = document.getElementById('myChart2').getContext('2d');
+
+    var scatterChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        datasets: [
+          {
+            label: 'Training Data',
+            showLine: false,
+            data: plotData,
+            fill: false
+          },
+          {
+            label: 'Y = '+m.dataSync()[0]+'X + ' + b.dataSync()[0],
+            data: [
+              {
+                x: 0,
+                y: b.dataSync()[0]
+              },
+              {
+                x: 11,
+                y: 11 * m.dataSync()[0] + b.dataSync()[0]
+              }
+            ],
+
+            // Changes this dataset to become a line
+            type: 'line',
+            borderColor: 'red',
+            fill: false
+          }
+        ]
+      },
+      options: {
+        scales: {
+          xAxes: [
+            {
+              type: 'linear',
+              position: 'bottom'
+            }
+          ]
+        }
+      }
+    });
+  }
+  plot();
+
+}"><br><br>
+
+</div>
+						</div>
+						
+						<div id='myDiv321' style="display: none;">...</div>							
+						<div class="Footer-search">
+							<div class="Footer-searwords">
+								<input type="text" style="font-size:20px; color:black;" name="text_hasil2" id="321text_hasil2" placeholder="__">
+								<div class="Footer-searsubmit" id="myUpdate321" style="color:black; visibility:hidden;" onclick="{
+
+   // first remove first and last line since they are injected
+  myFred = document.getElementById('myTextarea321').value.split('\n');
+  myFred.pop();
+  myFred.push('');
+  myFred.shift();
+  myFred.shift();
+  myJoe = myFred.join('\n');
+
+  document.getElementById('myDiv321Code').innerHTML =    myJoe ;
+  document.getElementById('myButton321').click();
+                                             
+}">Regresi (1 Step)</div>
+							</div>
+						</div>
+
+						</div>
+                    </form>
+                </div>
+            </div> 				
+    </div>
+
+	<!--<form id="yourformid">
+		<div class="container">
+			<div class="row submit-content">
+				<h4>Feedback<hr class="contact-hr"></h4>
+				<p class="contact-tip">If you have any questions that require our assistance, please fill in the following contact information so that we can contact you!</p>
+				<div class="col-lg-6 col-md-6">
+					<span>Name：</span> <input type="text" name="contact" id="contact" class="form-control"  placeholder="">
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tel：</span><input type="text" name="tel"  id="tel" class="form-control"  placeholder="">
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<span>Email：</span><input type="text" name="email" id="email" class="form-control"  placeholder="">
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<span>Address：</span> <input type="text" name="addr" id="addr" class="form-control" placeholder="">
+				</div>
+				<div class="col-lg-12 col-md-12">
+					<p class="textarea-tip">Please enter your message in the following fields</p>
+					<textarea class="form-control form-textarea" name="content"  id="content"   rows="8"></textarea>
+				</div>
+				<button class="btn" id="tjtj">Submit</button>
+			</div>
+		</div>
+	</form>-->
+
+	
+    <div class="Footer-wrapper">
+        <div class="Footer-container clearFix">
+            <div class="Footer-search">
+                <div class="Footer-searwords">
+                    <input type="text" name="ft_email" id="ft_email" placeholder="Masukkan Email Anda">
+                    <div class="Footer-searsubmit" id="ft_btn">Join/Sign Up</div>
+                </div>
+            </div>
+            <div class="Footer-navbar clearFix">
+                <ul>
+                    <li>
+                        <div class="Footer-navclick">
+                            <h6>Regresi</h6><i class="Footer-navarr"></i>
+                        </div>
+                        <div class="Footer-navwords">
+							<a href="">Linear</a>
+                            <a href="">Non-Linear</a>         
+						</div>
+                    </li>
+                    <li>
+                        <div class="Footer-navclick">
+                            <h6>Klasifikasi</h6><i class="Footer-navarr"></i>
+                        </div>
+                        <div class="Footer-navwords">
+                            <a href="">2 Kelas (Binary Classification)</a>
+							<a href="">> 2 Kelas (Multi-Class)</a>							
+						</div>
+                    </li>
+                    <li>
+                        <div class="Footer-navclick">
+                            <h6>Clustering</h6><i class="Footer-navarr"></i>
+                        </div>
+                        <div class="Footer-navwords">
+                            <a href="">Hard Clustering</a>
+                            <a href="" target="_blank">Hierarchical Clustering </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="Footer-navclick">
+                            <h6>Analisis Hasil</h6><i class="Footer-navarr"></i>
+                        </div>
+                        <div class="Footer-navwords">
+                            <a href="" target="_blank">Pola Data</a>
+                            <a href="">Kecenderungan Hasil</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="Footer-navclick">
+                            <h6>Tentang Kami</h6><i class="Footer-navarr"></i>
+                        </div>
+                        <div class="Footer-navwords">
+                            <a href="">Contact Us</a>
+                            <a href="" target="_blank">Terms of use</a>
+                            <a href="" target="_blank">Privacy Agreement</a>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="Footer-bottom">
+                <p>Copyright © 2020 edUBig | Pelatihan Data Science &nbsp;<a target="_blank" href="ub.ac.id"></a>&nbsp; </p>
+            </div>
+        </div>
+        
+    </div>
+	
+	
+	
+
+	<script>
+	/*
+	myOnce321 = true    // so textareas are only clicked once
+
+
+	function myTextGrow(myT, myB){
+	   var myCursorStart = document.getElementById(myT).selectionStart
+	   var myCursorEnd = document.getElementById(myT).selectionEnd
+
+	   myDivName = myB.replace('Code','')
+	   document.getElementById(myT).value = '\x3Cscript src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0"> \x3C/script> \n\n' + document.getElementById(myB).innerHTML 
+	   document.getElementById(myT).value += '<div id=\''+myDivName+'\'>...</div><br>'     
+	   setTimeout(function() {
+		  while (  document.getElementById(myT).clientHeight < document.getElementById(myT).scrollHeight){                                                                                                                                              
+			  document.getElementById(myT).rows += 3; 
+		  } 
+	   }, 100)
+
+	  document.getElementById(myT).selectionStart = myCursorStart
+	  document.getElementById(myT).selectionEnd = myCursorEnd
+
+	}  
+   */
+
+	</script>  
+ 
+	
+	
+	<script>
+	  
+	  
+	var canvas = document.getElementById('myChart');
+	var ctx = canvas.getContext('2d');
+
+	var myChart = new Chart(ctx, {
+	   type: 'line',
+	   data: {
+		  labels: ['2018', '2019', '2020', '2021'],
+		  datasets: [{
+			 label: 'Dataset 1',
+			 data: [150, 200, 250, 150],
+			 color: '#878BB6',
+		  }, {
+			 label: 'Dataset 2',
+			 data: [250, 100, 150, 10],
+			 color: '#4ACAB4',
+		  }]
+	   }
+	});
+
+	</script>
+
+	<!--  Following is a helper functions  to grow the textareas  -->
+	<script>
+		myOnce321 = true    // so textareas are only clicked once
+		myOnce1234 = true    
+		myOnce12345 = true  
+
+		function myTextGrow(myT, myB){
+		   var myCursorStart = document.getElementById(myT).selectionStart
+		   var myCursorEnd = document.getElementById(myT).selectionEnd
+		   myDivName = myB.replace('Code','')
+		   document.getElementById(myT).value = '\x3Cscript src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0"> \x3C/script> \n\n' + document.getElementById(myB).innerHTML 
+		   document.getElementById(myT).value += '<div id=\''+myDivName+'\'>...</div><br>'     
+		   setTimeout(function() {
+			  while (  document.getElementById(myT).clientHeight < document.getElementById(myT).scrollHeight){                                                                                                                                              
+				  document.getElementById(myT).rows += 3; 
+			  } 
+		   }, 100)
+		  document.getElementById(myT).selectionStart = myCursorStart
+		  document.getElementById(myT).selectionEnd = myCursorEnd
+		}  
+	</script>
+    <script>
+
+        $('#ft_btn').click(function(){
+            var ft_email=$('#ft_email').val();
+            if(ft_email==""){
+                alert("Please fill in YOUR EMAIL ADDRESS!");return false;
+            }
+            $.ajax({
+                url: "/global/index.php/list/mag2.html",
+                type: "POST",
+                data: {'email':ft_email},
+                async: true,
+                dataType: "json",
+                success: function(data){
+                    if (data == "1") {
+                        alert("Successful!"); location.reload();
+                    }
+                }
+            });
+        });
+		
+		$('#btn_hitung').click(function () {
+				//alert("Please fill in YOUR EMAIL ADDRESS!");
+				//if(e.keyCode == 13) {
+				//document.getElementById('myDiv12345').innerHTML = '434'; 	
+				//var get_val = document.getElementById('myDiv1234').innerHTML;
+				//alert(get_val);
+				//$('#text_hasil').text($(get_val).val());
+				$('#text_hasil').val($('#mymyDiv1234').text());
+				//}
+			  //});
+		});
+		
+		$('#myUpdate1234').click(function () {
+				//alert("Please fill in YOUR EMAIL ADDRESS!");
+				//if(e.keyCode == 13) {
+				//document.getElementById('myDiv12345').innerHTML = '434'; 	
+				//var get_val = document.getElementById('myDiv1234').innerHTML;
+				//alert(get_val);
+				//$('#text_hasil').text($(get_val).val());
+				$('#text_hasil2').val($('#myDiv1234').text());
+				//}
+			  //});
+		});
+		
+		
+</script>
+
+
+	
+	<script type="text/javascript" src="res/wow.js"></script>
+	
+
+	<script>
+		$('#tjtj').click(function(){
+			/*var	very=$('#very').val();
+			if(very==""){
+				alert("Please fill in the verification code!");return false;
+			}*/
+			var	contact=$('#contact').val();
+			var	email=$('#email').val();
+			var	tel=$('#tel').val();
+			var	addr=$('#addr').val();
+			var	content=$('#content').val();
+
+			if(contact==""){alert('Please fill in your name!');return false;}
+			if(tel==''){alert('Please enter contact information!');return false;}
+			if(isNaN(tel)){alert('Please fill in the correct contact information!');return false;}
+			var myreg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+			if(!myreg.test(email))
+			{alert('Please enter a valid email box!'); return false; }
+			if(addr==""){alert('Please fill in the country/city!');return false;}
+			if(content==""){alert('Please fill in the contents!');return false;}
+
+
+			$.ajax({
+				url: "",
+				type: "POST",
+				//data: {'email':email,'click_name':click_name,'content':content},
+				 data:$('#yourformid').serialize(),// 提交整个表单 你的formid
+				async: true,
+				dataType: "json",
+				success: function(data){
+
+					if (data == "1") {
+						alert("Successful!"); location.reload();
+					}
+				}
+			});
+		});
+        $(function () {
+            
+        });
+        wow = new WOW({
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 240,
+            mobile: false,
+            live: true
+        });
+        wow.init();
+	</script>
+	
+	
+
+ 
+
+	
+
+
+
+</body></html>
