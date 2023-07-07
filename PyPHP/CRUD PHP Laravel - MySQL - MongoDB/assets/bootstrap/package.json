@@ -142,7 +142,7 @@
     "shelljs": "^0.8.3",
     "shx": "^0.3.2",
     "sinon": "^7.2.3",
-    "stylelint": "^9.10.1",
+    "stylelint": "^15.10.1",
     "stylelint-config-twbs-bootstrap": "^0.3.0",
     "uglify-js": "^3.4.9",
     "vnu-jar": "18.11.5"
